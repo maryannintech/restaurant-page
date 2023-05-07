@@ -16,6 +16,7 @@ header {
   font-family: 'Abril Fatface', cursive;
   font-size: 1.4rem;
   background-color: #997b66;
+  color: white;
 }
 
 ul {
@@ -23,9 +24,22 @@ ul {
   list-style: none;
   gap: 20px;
   font-family: 'Playfair Display', serif;
+  margin: 0;
 }
 
 li:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+main {
+    font-family: 'Playfair Display', serif;
+    background-color: #f1dca7;
+}
+
+.home-text {
+    width: 500px;
+    text-align: justify;
+    padding: 60px;
+    font-size: 1.3rem;
 }
