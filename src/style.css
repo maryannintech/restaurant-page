@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 header {
-    display: flex;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.4rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
