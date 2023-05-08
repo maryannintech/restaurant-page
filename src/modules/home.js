@@ -122,5 +122,11 @@ function homeContent() {
 
   customerDIV.append(card1, card2, card3, card4);
 
-  
+  // footer
+  const homeFooter = document.createElement("footer");
+  const footerP = document.createElement("p");
+  footerP.textContent = "All photos are from Pexels.com";
+  homeFooter.appendChild(footerP);
 }
+
+export default function homeContent();
