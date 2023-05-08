@@ -76,6 +76,7 @@ main {
   align-items: center;
   font-size: 1.3rem;
   text-align: center;
+  gap: 50px;
 }
 
 .schedule-ul {
