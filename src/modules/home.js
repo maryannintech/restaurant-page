@@ -21,6 +21,18 @@ function homeContent() {
   li2.textContent = "menu";
   li3.textContent = "contact";
   homeUL.append(li1, li2, li3);
+  homeText.appendChild(homeNav);
+
+  const homeAbout = document.createElement("p");
+  homeAbout.className = "home-p";
+  homeAbout.textContent = `"The Vintage Delights is a charming cafe and bakery dedicated to
+  preserving the timeless art of baking vintage cakes. Our menu
+  features a variety of classic cake flavors from different eras, all
+  made with the finest ingredients and baked fresh daily. Whether
+  you\'re in the mood for a rich and decadent chocolate cake from the
+  1920s, a light and airy chiffon cake from the 1950s, or a buttery
+  pound cake from the 1970s, we\'ve got you covered."`;
+  homeText.appendChild(homeAbout);
 
   // schedule section
   const homeSchedule = document.createElement("div");
@@ -126,6 +138,11 @@ function homeContent() {
   footerP.textContent = "All photos are from Pexels.com";
   homeFooter.appendChild(footerP);
 
+  const contentDIV = document.querySelector("#content");
+  contentDIV.appendChild(mainElement);
+  contentDIV.appendChild(homeSchedule);
+  contentDIV.appendChild(homeReview);
+  contentDIV.appendChild(homeFooter);
 }
 
 export default homeContent;
