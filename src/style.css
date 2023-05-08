@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color: #87986a;
+}
+
 body {
   margin: 0;
 }
@@ -36,6 +40,7 @@ main {
   font-family: "Playfair Display", serif;
   background-color: #f1dca7;
   margin: 0;
+  
 }
 
 .home-text {
@@ -47,10 +52,11 @@ main {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0;
-  color: white;
 }
 
 .title {
   font-family: "Abril Fatface", cursive;
+  background-color: var(--bg-color);
+  width: fit-content;
+  padding: 10px;
 }
