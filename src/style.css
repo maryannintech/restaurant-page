@@ -75,6 +75,7 @@ main {
   justify-content: space-around;
   align-items: center;
   font-size: 1.3rem;
+  text-align: center;
 }
 
 .schedule-ul {
@@ -82,7 +83,55 @@ main {
   color: #846552;
 }
 
-.schedule-title { 
+h2 {
   margin: 0;
+}
+
+.schedule-title { 
   color: #956b4b;
+}
+
+.reviews {
+  color: white;
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 50px 80px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+.reviews h2 {
+  margin-bottom: 20px;
+}
+
+.customers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.card {
+  width: 200px;
+}
+
+.name {
+  text-align: end;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--pink-color);
+}
+
+footer p {
+  margin: 0;
+  font-family: "Playfair Display", serif;
 }
