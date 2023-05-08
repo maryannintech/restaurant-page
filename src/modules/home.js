@@ -1,5 +1,3 @@
-import "./style.css";
-
 function homeContent() {
   // hero section
   const mainElement = document.createElement("main");
@@ -127,6 +125,7 @@ function homeContent() {
   const footerP = document.createElement("p");
   footerP.textContent = "All photos are from Pexels.com";
   homeFooter.appendChild(footerP);
+
 }
 
-export default function homeContent();
+export default homeContent;
