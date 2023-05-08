@@ -36,6 +36,7 @@ function homeContent() {
 
   const scheduleUL = document.createElement("ul");
   scheduleUL.className = "schedule-ul";
+  homeSchedule.appendChild(scheduleUL);
   const scheduleLI1 = document.createElement("li");
   const scheduleLI2 = document.createElement("li");
   const scheduleLI3 = document.createElement("li");
@@ -44,4 +45,26 @@ function homeContent() {
   scheduleLI2.textContent = "Lunch: 11:30am - 2:30pm";
   scheduleLI3.textContent = "Afternoon Tea: 3:00pm - 5:00pm";
   scheduleLI4.textContent = "Dinner: 5:30pm - 9:00pm";
+  scheduleUL.appendChild(scheduleLI1);
+  scheduleUL.appendChild(scheduleLI2);
+  scheduleUL.appendChild(scheduleLI3);
+  scheduleUL.appendChild(scheduleLI4);
+
+  // reviews
+  const homeReview = document.createElement("div");
+  homeReview.className = "reviews";
+  const reviewH2 = document.createElement("h2");
+  reviewH2.textContent = "WHAT OUR CUSTOMERS ARE SAYING";
+  homeReview.appendChild(reviewH2);
+
+  const customerDIV = document.createElement("div");
+  customerDIV.className = "customers";
+  homeReview.appendChild(customerDIV);
+
+  const card1 = document.createElement("div");
+  card1.className = "card";
+  const img1 = document.createElement("img");
+  img1.src =
+    "https://images.pexels.com/photos/9395560/pexels-photo-9395560.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+  img1.alt = "Red Velvet Cake Served with Coffee";
 }
