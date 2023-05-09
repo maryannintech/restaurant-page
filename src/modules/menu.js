@@ -35,9 +35,10 @@ function menuContent() {
 
   const menuContent = document.createElement("div");
   menuContent.className = "menuContent";
+  menuBG.appendChild(menuContent);
 
   const menuContent1 = document.createElement("div");
-  menuContent1.className = "card";
+  menuContent1.className = "menu-card";
   const menuImg1 = document.createElement("img");
   menuImg1.src =
     "https://images.pexels.com/photos/5594491/pexels-photo-5594491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
@@ -50,6 +51,23 @@ function menuContent() {
   menuDetail1.textContent =
     "A moist and flavorful cake loaded with shredded carrots, chopped walnuts, and warm spices, finished with cream cheese frosting.";
   menuContent1.append(menuImg1, menuTitle1, menuDetail1);
+
+  const menuContent2 = document.createElement("div");
+  menuContent2.className = "menu-card";
+  const menuImg2 = document.createElement("img");
+  menuImg2.src =
+    "https://images.pexels.com/photos/8443294/pexels-photo-8443294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+  menuImg2.alt = "Cup Cakes with Strawberries on Top";
+  const menuTitle2 = document.createElement("p");
+  menuTitle2.className = "menuTitle";
+  menuTitle2.textContent = "Strawberry Shortcake";
+  const menuDetail2 = document.createElement("p");
+  menuDetail2.className = "menuDetail";
+  menuDetail2.textContent =
+    "Layers of tender sponge cake with whipped cream and fresh strawberries, a quintessential summer dessert.";
+  menuContent2.append(menuImg2, menuTitle2, menuDetail2);
+
+  menuContent.append(menuContent1, menuContent2);
 
   const menuSection = document.createElement("section");
   menuSection.className = "menu";
