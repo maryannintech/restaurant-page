@@ -157,7 +157,13 @@ footer p {
   font-family: var(--detail-font);
   color: var(--yellow-color);
   text-align: center;
-  padding: 80px;
+  padding: 50px 80px;
+}
+
+.menu-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
 }
 
 .menuTitle {
@@ -190,4 +196,9 @@ footer p {
   background-color: var(--bg-color);
   border-radius: 10px;
   padding: 10px 20px;
+  transition: all ease 1s;
+}
+
+.menu-card:hover {
+  background-color: #c2977d;
 }

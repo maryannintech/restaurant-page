@@ -29,7 +29,8 @@ function menuContent() {
   // menu
   const menuBG = document.createElement("div");
   menuBG.className = "menu-page";
-  const menuTitle = document.createElement("h1");
+  const menuTitle = document.createElement("p");
+  menuTitle.className = "menu-title"
   menuTitle.textContent = "OUR MENU";
   menuBG.appendChild(menuTitle);
 
