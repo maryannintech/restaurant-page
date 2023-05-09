@@ -12,16 +12,21 @@
 :root {
   --bg-color: #87986a;
   --pink-color: #d9ae94;
+  --brown-color: #846552;
+  --yellow-color: #f1dca7;
+  --detail-font: "Playfair Display", serif;
 }
 
 body {
   margin: 0;
 }
 
+/* HOME */
+
 ul {
   list-style: none;
   padding: 0;
-  font-family: "Playfair Display", serif;
+  font-family: var(--detail-font);
 }
 
 .nav-ul {
@@ -40,8 +45,8 @@ ul {
 }
 
 main {
-  font-family: "Playfair Display", serif;
-  background-color: #f1dca7;
+  font-family: var(--detail-font);
+  background-color: var(--yellow-color);
   margin: 0;
   
 }
@@ -68,7 +73,7 @@ main {
   font-family: "Abril Fatface", cursive;
   color: var(--pink-color);
   text-shadow: 1px 1px 1px black;
-  letter-spacing: 5px;
+  letter-spacing: 20px;
 }
 
 .schedule {
@@ -87,7 +92,7 @@ main {
   width: fit-content;
   color: white;
   padding: 10px;
-  border: 10px solid #846552;
+  border: 10px solid var(--brown-color);
   border-radius: 20px;
 }
 
@@ -106,14 +111,15 @@ h2 {
   margin: 0;
   padding: 50px 80px;
   text-align: center;
-  font-family: "Playfair Display", serif;
+  font-family: var(--detail-font);
 }
 
 .reviews h2 {
   margin-bottom: 20px;
 }
 
-.customers {
+.customers,
+.menuContent {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,11 +143,28 @@ img {
 
 footer {
   text-align: center;
-  background-color: #846552;
+  background-color: var(--brown-color);
 }
 
 footer p {
   margin: 0;
-  font-family: "Playfair Display", serif;
+  font-family: var(--detail-font);
   color: white;
+}
+
+/* MENU */
+.menu-page {
+  background-color: #956b4b;
+  font-family: var(--detail-font);
+  color: var(--yellow-color);
+  text-align: center;
+  padding: 80px;
+}
+
+.menuTitle {
+  font-size: 1.3rem;
+}
+
+.menuDetail {
+  text-align: left;
 }
