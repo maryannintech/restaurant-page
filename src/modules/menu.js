@@ -67,7 +67,52 @@ function menuContent() {
     "Layers of tender sponge cake with whipped cream and fresh strawberries, a quintessential summer dessert.";
   menuContent2.append(menuImg2, menuTitle2, menuDetail2);
 
-  menuContent.append(menuContent1, menuContent2);
+  const menuContent3 = document.createElement("div");
+  menuContent3.className = "menu-card";
+  const menuImg3 = document.createElement("img");
+  menuImg3.src =
+    "https://images.unsplash.com/photo-1620490448382-d2f51a08596f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80";
+  menuImg3.alt = "Black forest cake on a plate";
+  const menuTitle3 = document.createElement("p");
+  menuTitle3.className = "menuTitle";
+  menuTitle3.textContent = "Black Forest Cake";
+  const menuDetail3 = document.createElement("p");
+  menuDetail3.className = "menuDetail";
+  menuDetail3.textContent =
+    "A classic German chocolate cake layered with tart cherries and topped with whipped cream and chocolate shavings.";
+  menuContent3.append(menuImg3, menuTitle3, menuDetail3);
+
+  const menuContent4 = document.createElement("div");
+  menuContent4.className = "menu-card";
+  const menuImg4 = document.createElement("img");
+  menuImg4.src =
+    "https://images.pexels.com/photos/15071192/pexels-photo-15071192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+  menuImg4.alt = "Close-Up Shot of a Slice of Yummy Cake";
+  const menuTitle4 = document.createElement("p");
+  menuTitle4.className = "menuTitle";
+  menuTitle4.textContent = "Red Velvet Cake";
+  const menuDetail4 = document.createElement("p");
+  menuDetail4.className = "menuDetail";
+  menuDetail4.textContent =
+    "A Southern staple, this bright red cake is moist and tender with a subtle cocoa flavor, topped with tangy cream cheese frosting.";
+  menuContent4.append(menuImg4, menuTitle4, menuDetail4);
+
+  const menuContent5 = document.createElement("div");
+  menuContent5.className = "menu-card";
+  const menuImg5 = document.createElement("img");
+  menuImg5.src =
+    "https://images.pexels.com/photos/12035555/pexels-photo-12035555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+  menuImg5.alt = "A Piece of Lemon Cake on a Ceramic Plate";
+  const menuTitle5 = document.createElement("p");
+  menuTitle5.className = "menuTitle";
+  menuTitle5.textContent = "Lemon Chiffon Cake";
+  const menuDetail5 = document.createElement("p");
+  menuDetail5.className = "menuDetail";
+  menuDetail5.textContent =
+    "A light and airy cake with a bright lemon flavor, made with a blend of cake flour and whipped egg whites. Perfect for any season";
+  menuContent5.append(menuImg5, menuTitle5, menuDetail5);
+
+  menuContent.append(menuContent1, menuContent2, menuContent3, menuContent4, menuContent5);
 
   const menuSection = document.createElement("section");
   menuSection.className = "menu";
