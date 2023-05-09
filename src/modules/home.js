@@ -17,6 +17,9 @@ function homeContent() {
   const li1 = document.createElement("li");
   const li2 = document.createElement("li");
   const li3 = document.createElement("li");
+  li1.className = "homeBtn";
+  li2.className = "menuBtn";
+  li3.className = "contactBtn";
   li1.textContent = "home";
   li2.textContent = "menu";
   li3.textContent = "contact";
@@ -72,6 +75,7 @@ function homeContent() {
   img1.src =
     "https://images.pexels.com/photos/9395560/pexels-photo-9395560.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   img1.alt = "Red Velvet Cake Served with Coffee";
+  img1.draggable = false;
   const cardText1 = document.createElement("p");
   cardText1.className = "card-text";
   cardText1.textContent = `"The cakes at Vintage Delights are simply divine! Every bite was
@@ -88,6 +92,7 @@ function homeContent() {
   img2.src =
     "https://images.pexels.com/photos/3968058/pexels-photo-3968058.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load";
   img2.alt = "Brown Wooden Table and Chairs Near Window";
+  img2.draggable = false;
   const cardText2 = document.createElement("p");
   cardText2.className = "card-text";
   cardText2.textContent = `"The atmosphere at Vintage Delights is charming and cozy. It\'s the
@@ -104,6 +109,7 @@ function homeContent() {
   img3.src =
     "https://images.pexels.com/photos/6631965/pexels-photo-6631965.jpeg?auto=compress&cs=tinysrgb&w=600";
   img3.alt = "Lemon Cake on Round Ceramic Plate";
+  img3.draggable = false;
   const cardText3 = document.createElement("p");
   cardText3.className = "card-text";
   cardText3.textContent = ` "I don\'t usually have a sweet tooth, but the cakes at Vintage
@@ -120,6 +126,7 @@ function homeContent() {
   img4.src =
     "https://images.pexels.com/photos/10581380/pexels-photo-10581380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   img4.alt = "Strawberry Shortcake in a Glass Jar";
+  img4.draggable = false;
   const cardText4 = document.createElement("p");
   cardText4.className = "card-text";
   cardText4.textContent = `"I discovered Vintage Delights by chance and I\'m so glad I did.
@@ -138,11 +145,17 @@ function homeContent() {
   footerP.textContent = "All photos are from Pexels.com";
   homeFooter.appendChild(footerP);
 
+  const homeSection = document.createElement("section");
+  homeSection.className = "home";
+  homeSection.appendChild(mainElement);
+  homeSection.appendChild(homeSchedule);
+  homeSection.appendChild(homeReview);
+  homeSection.appendChild(homeFooter);
+
   const contentDIV = document.querySelector("#content");
-  contentDIV.appendChild(mainElement);
-  contentDIV.appendChild(homeSchedule);
-  contentDIV.appendChild(homeReview);
-  contentDIV.appendChild(homeFooter);
+  contentDIV.appendChild(homeSection);
+
+  return homeSection;
 }
 
 export default homeContent;
