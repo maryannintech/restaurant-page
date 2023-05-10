@@ -154,7 +154,6 @@ function homeContent() {
 
   const contentDIV = document.querySelector("#content");
   contentDIV.appendChild(homeSection);
-
 }
 
 export default homeContent;
