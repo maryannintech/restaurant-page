@@ -2,6 +2,7 @@ import "./style.css";
 import homeContent from "./modules/home";
 import menuContent from "./modules/menu";
 import contactContent from "./modules/contact";
+import makeNav from "./modules/nav";
 
 let homeClicked = true;
 let menuClicked = false;
@@ -9,7 +10,8 @@ let contactClicked = false;
 
 const contentDIV = document.querySelector("#content");
 
-
+makeNav();
+homeContent();
 
 const homePage = document.querySelector(".home");
 const menuPage = document.querySelector(".menu");
@@ -17,6 +19,8 @@ const contactPage = document.querySelector(".contact");
 
 const homeBtn = document.querySelector(".homeBtn");
 homeBtn.addEventListener("click", () => {
+  contentDIV.removeChild(menuPage);
+  contentDIV.removeChild(contactBtn);
   if (homeClicked === false) {
     homeContent();
     homeClicked = false;
