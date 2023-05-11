@@ -1,30 +1,4 @@
 function contactContent() {
-  const mainElement = document.createElement("main");
-  const homeText = document.createElement("div");
-  homeText.className = "home-text";
-  mainElement.appendChild(homeText);
-
-  const homeTitle = document.createElement("h1");
-  homeTitle.className = "title";
-  homeTitle.textContent = "VINTAGE DELIGHTS";
-  homeText.appendChild(homeTitle);
-
-  const homeNav = document.createElement("nav");
-  const homeUL = document.createElement("ul");
-  homeUL.className = "nav-ul";
-  homeNav.appendChild(homeUL);
-  const li1 = document.createElement("li");
-  const li2 = document.createElement("li");
-  const li3 = document.createElement("li");
-  li1.className = "homeBtn";
-  li2.className = "menuBtn";
-  li3.className = "contactBtn";
-  li1.textContent = "home";
-  li2.textContent = "menu";
-  li3.textContent = "contact";
-  homeUL.append(li1, li2, li3);
-  homeText.appendChild(homeNav);
-
   // contact
   const contactBG = document.createElement("div");
   contactBG.className = "contact-page";
@@ -47,7 +21,7 @@ function contactContent() {
   contactLocation.className = "contact-location";
   const locationTitle = document.createElement("h2");
   locationTitle.textContent = "VISIT US";
-  locationTitle.className = "location-title"
+  locationTitle.className = "location-title";
   const locationAddress = document.createElement("p");
   locationAddress.className = "location-address";
   locationAddress.textContent = "Address: 123 Main Street, Anytown, USA";
@@ -61,7 +35,6 @@ function contactContent() {
 
   const contactSection = document.createElement("section");
   contactSection.className = "contact";
-  contactSection.appendChild(mainElement);
   contactSection.appendChild(contactBG);
 
   const contentDIV = document.querySelector("#content");
