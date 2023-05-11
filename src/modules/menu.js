@@ -44,6 +44,7 @@ function menuContent() {
   menuImg1.src =
     "https://images.pexels.com/photos/5594491/pexels-photo-5594491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   menuImg1.alt = "Sliced Carrot Cake on a White Plate";
+  menuImg1.draggable = false;
   const menuTitle1 = document.createElement("p");
   menuTitle1.className = "menuTitle";
   menuTitle1.textContent = "Carrot Cake";
@@ -59,6 +60,7 @@ function menuContent() {
   menuImg2.src =
     "https://images.pexels.com/photos/8443294/pexels-photo-8443294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   menuImg2.alt = "Cup Cakes with Strawberries on Top";
+  menuImg2.draggable = false;
   const menuTitle2 = document.createElement("p");
   menuTitle2.className = "menuTitle";
   menuTitle2.textContent = "Strawberry Shortcake";
@@ -74,6 +76,7 @@ function menuContent() {
   menuImg3.src =
     "https://images.unsplash.com/photo-1620490448382-d2f51a08596f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80";
   menuImg3.alt = "Black forest cake on a plate";
+  menuImg3.draggable = false;
   const menuTitle3 = document.createElement("p");
   menuTitle3.className = "menuTitle";
   menuTitle3.textContent = "Black Forest Cake";
@@ -89,6 +92,7 @@ function menuContent() {
   menuImg4.src =
     "https://images.pexels.com/photos/15071192/pexels-photo-15071192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   menuImg4.alt = "Close-Up Shot of a Slice of Yummy Cake";
+  menuImg4.draggable = false;
   const menuTitle4 = document.createElement("p");
   menuTitle4.className = "menuTitle";
   menuTitle4.textContent = "Red Velvet Cake";
@@ -104,6 +108,7 @@ function menuContent() {
   menuImg5.src =
     "https://images.pexels.com/photos/12035555/pexels-photo-12035555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   menuImg5.alt = "A Piece of Lemon Cake on a Ceramic Plate";
+  menuImg5.draggable = false;
   const menuTitle5 = document.createElement("p");
   menuTitle5.className = "menuTitle";
   menuTitle5.textContent = "Lemon Chiffon Cake";
