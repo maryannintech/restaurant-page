@@ -44,6 +44,10 @@ ul {
   cursor: pointer;
 }
 
+.nav-ul li:active {
+  background-color: var(--yellow-color);
+}
+
 main {
   font-family: var(--detail-font);
   background-color: var(--yellow-color);
