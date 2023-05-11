@@ -47,6 +47,7 @@ function contactContent() {
   contactLocation.className = "contact-location";
   const locationTitle = document.createElement("h2");
   locationTitle.textContent = "VISIT US";
+  locationTitle.className = "location-title"
   const locationAddress = document.createElement("p");
   locationAddress.className = "location-address";
   locationAddress.textContent = "Address: 123 Main Street, Anytown, USA";
@@ -54,7 +55,7 @@ function contactContent() {
   locationIMG.src =
     "https://images.pexels.com/photos/3262277/pexels-photo-3262277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   locationIMG.alt = "Brown Bar Stools in Front of a big mirror";
-  contactLocation.appendChild(locationTitle, locationAddress, locationIMG);
+  contactLocation.append(locationTitle, locationAddress, locationIMG);
 
   contactBG.append(contactTitle, contactDetail, contactLocation);
 
@@ -62,7 +63,6 @@ function contactContent() {
   contactSection.className = "contact";
   contactSection.appendChild(mainElement);
   contactSection.appendChild(contactBG);
-  contactSection.appendChild(contactLocation);
 
   const contentDIV = document.querySelector("#content");
   contentDIV.appendChild(contactSection);

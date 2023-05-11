@@ -211,7 +211,8 @@ footer p {
   font-family: var(--detail-font);
 }
 
-.contact-title {
+.contact-title,
+.location-title {
   color: var(--yellow-color);
   text-align: center;
   letter-spacing: 10px;
@@ -230,4 +231,31 @@ footer p {
 
 .contact-ul > li {
   font-size: 1.3rem;
+}
+
+.contact-location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-location img {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  border: 10px solid var(--yellow-color);
+  margin-top: 20px;
+}
+
+.location-title {
+  margin-top: 50px;
+}
+
+.location-address {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: var(--yellow-color);
+  text-decoration-thickness: 3px;
 }
