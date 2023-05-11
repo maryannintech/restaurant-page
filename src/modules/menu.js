@@ -30,7 +30,7 @@ function menuContent() {
   const menuBG = document.createElement("div");
   menuBG.className = "menu-page";
   const menuTitle = document.createElement("p");
-  menuTitle.className = "menu-title"
+  menuTitle.className = "menu-title";
   menuTitle.textContent = "OUR MENU";
   menuBG.appendChild(menuTitle);
 
@@ -118,7 +118,13 @@ function menuContent() {
     "A light and airy cake with a bright lemon flavor, made with a blend of cake flour and whipped egg whites. Perfect for any season";
   menuContent5.append(menuImg5, menuTitle5, menuDetail5);
 
-  menuContent.append(menuContent1, menuContent2, menuContent3, menuContent4, menuContent5);
+  menuContent.append(
+    menuContent1,
+    menuContent2,
+    menuContent3,
+    menuContent4,
+    menuContent5
+  );
 
   const menuSection = document.createElement("section");
   menuSection.className = "menu";
