@@ -1,4 +1,4 @@
-export default function homeContent() {
+function homeContent() {
   // schedule section
   const homeSchedule = document.createElement("div");
   homeSchedule.className = "schedule";
@@ -116,3 +116,5 @@ export default function homeContent() {
   const contentDIV = document.querySelector("#content");
   contentDIV.appendChild(homeSection);
 }
+
+export { homeContent }

@@ -1,7 +1,7 @@
 import "./style.css";
-import homeContent from "./modules/home";
-import menuContent from "./modules/menu";
-import contactContent from "./modules/contact";
+import { homeContent } from "./modules/home";
+import { menuContent } from "./modules/menu";
+import { contactContent } from "./modules/contact";
 import makeNav from "./modules/nav";
 
 makeNav();
@@ -14,12 +14,14 @@ const homeBTN = document.querySelector(".homeBtn");
 const menuBTN = document.querySelector(".menuBtn");
 const contactBTN = document.querySelector(".contactBtn");
 
-const homePage = document.querySelector(".home");
-const menuPage = document.querySelector(".menu");
-const contactPage = document.querySelector(".contact");
+const homePage = document.createElement("div");
+homePage.classList.add("home");
 
-console.log(menuPage);
-console.log(contactPage);
+const menuPage = document.createElement("div");
+menuPage.classList.add("menu");
+
+const contactPage = document.createElement("div");
+contactPage.classList.add("contact");
 
 homeBTN.addEventListener("click", () => {
   if (!homeBTN.disabled && displayed !== "home") {
@@ -28,7 +30,7 @@ homeBTN.addEventListener("click", () => {
     homeBTN.disabled = true;
     contactPage.classList.add("hide");
     menuPage.classList.add("hide");
-    homePage.style.display = "block";
+    homePage.classList.remove("hide");
   }
 });
 
@@ -41,7 +43,7 @@ menuBTN.addEventListener("click", () => {
     contactBTN.disabled = false;
     homePage.classList.add("hide");
     contactPage.classList.add("hide");
-    menuPage.style.display = "block";
+    menuPage.classList.remove("hide");;
   }
 });
 
@@ -54,6 +56,6 @@ contactBTN.addEventListener("click", () => {
     menuBTN.disabled = false;
     homePage.classList.add("hide");
     menuPage.classList.add("hide");
-    contactPage.style.disabled = "block";
+    contactPage.classList.remove("hide");
   }
 });
