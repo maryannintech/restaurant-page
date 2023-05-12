@@ -9,7 +9,6 @@ homeContent();
 
 let displayed = "home";
 
-const contentDIV = document.querySelector("#content");
 const homeBTN = document.querySelector(".homeBtn");
 const menuBTN = document.querySelector(".menuBtn");
 const contactBTN = document.querySelector(".contactBtn");
