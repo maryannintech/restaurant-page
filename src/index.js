@@ -29,6 +29,7 @@ console.log(homePage);
 console.log(menuPage);
 console.log(contactPage);
 
+
 // Add event listeners to the home, menu, and contact buttons
 homeBTN.addEventListener("click", () => {
   // If the home button is not disabled and the current page is not home
