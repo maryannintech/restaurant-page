@@ -102,6 +102,7 @@ function menuContent() {
   const menuSection = document.createElement("section");
   menuSection.className = "menu";
   menuSection.appendChild(menuBG);
+  
   const contentDIV = document.querySelector("#content");
   contentDIV.appendChild(menuSection);
 }
