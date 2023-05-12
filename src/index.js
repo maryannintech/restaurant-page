@@ -6,8 +6,6 @@ import makeNav from "./modules/nav";
 
 makeNav();
 homeContent();
-menuContent();
-contactContent();
 
 let displayed = "home";
 
