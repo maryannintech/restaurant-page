@@ -12,16 +12,23 @@ const contentDIV = document.querySelector("#content");
 
 makeNav();
 homeContent();
+menuContent();
+contactContent();
 
 const homePage = document.querySelector(".home");
+console.log(homePage);
 const menuPage = document.querySelector(".menu");
+console.log(menuPage);
 const contactPage = document.querySelector(".contact");
+console.log(contactPage);
 
 const homeBtn = document.querySelector(".homeBtn");
 homeBtn.addEventListener("click", () => {
   if (homeClicked === false) {
     homeContent();
     homeClicked = false;
+    menuPage.style.display = "none";
+    contactPage.style.display = "none";
   } else {
   }
   menuClicked = false;
@@ -33,6 +40,8 @@ menuBtn.addEventListener("click", () => {
   if (menuClicked === false) {
     menuContent();
     menuClicked = true;
+    homePage.style.display = "none";
+    contactPage.style.display = "none";
   } else {
   }
   homeClicked = false;
@@ -44,6 +53,8 @@ contactBtn.addEventListener("click", () => {
   if (contactClicked === false) {
     contactContent();
     contactClicked = true;
+    homePage.style.display = "none";
+    menuPage.style.display = "none";
   } else {
   }
   homeClicked = false;
