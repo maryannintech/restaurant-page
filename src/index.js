@@ -6,6 +6,8 @@ import makeNav from "./modules/nav";
 
 makeNav();
 homeContent();
+menuContent;
+contactContent;
 
 let displayed = "home";
 
@@ -17,6 +19,9 @@ const contactBTN = document.querySelector(".contactBtn");
 const homePage = document.querySelector(".home");
 const menuPage = document.querySelector(".menu");
 const contactPage = document.querySelector(".contact");
+
+console.log(menuPage);
+console.log(contactPage);
 
 homeBTN.addEventListener("click", () => {
   if (!homeBTN.disabled && displayed !== "home") {
@@ -51,6 +56,6 @@ contactBTN.addEventListener("click", () => {
     menuBTN.disabled = false;
     homePage.classList.add("hide");
     menuPage.classList.add("hide");
-    contactPage.style.disabled = "block"
+    contactPage.style.disabled = "block";
   }
 });
