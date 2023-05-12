@@ -25,15 +25,23 @@ homeBTN.addEventListener("click", () => {
 });
 
 menuBTN.addEventListener("click", () => {
-  displayed = "menu";
-  displayContent();
-  homeBTN.disabled = false;
+  if (!menuBTN.disabled && displayed !== "menu") {
+    menuContent();
+    displayed = "menu";
+    menuBTN.disabled = true;
+    homeBTN.disabled = false;
+    contactBTN.disabled = false;
+  }
 });
 
 contactBTN.addEventListener("click", () => {
-  displayed = "contact";
-  displayContent();
-  homeBTN.disabled = false;
+  if (!contactBTN.disabled && displayed !== "contact") {
+    contactContent();
+    displayed = "contact";
+    contactBTN.disabled = true;
+    homeBTN.disabled = false;
+    menuBTN.disabled = false;
+  }
 });
 
 function displayContent() {
