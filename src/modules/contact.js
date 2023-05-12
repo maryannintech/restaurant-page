@@ -29,6 +29,7 @@ function contactContent() {
   locationIMG.src =
     "https://images.pexels.com/photos/3262277/pexels-photo-3262277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   locationIMG.alt = "Brown Bar Stools in Front of a big mirror";
+  locationIMG.draggable = false;
   contactLocation.append(locationTitle, locationAddress, locationIMG);
 
   contactBG.append(contactTitle, contactDetail, contactLocation);
