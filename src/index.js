@@ -29,63 +29,57 @@ console.log(homePage);
 console.log(menuPage);
 console.log(contactPage);
 
-// Add event listeners to the home, menu, and contact buttons
 homeBTN.addEventListener("click", () => {
-  // If the home button is not disabled and the current page is not home
   if (!homeBTN.disabled && displayed !== "home") {
-    // Show the home content
+    // hide the currently displayed content
+    document.querySelector("." + displayed).classList.add("hide");
+
+    // show the home content
     homeContent();
-    // Set the displayed variable to home
     displayed = "home";
-    // Disable the home button
     homeBTN.disabled = true;
-    // Enable the menu and contact buttons
     menuBTN.disabled = false;
     contactBTN.disabled = false;
-    // Hide the menu and contact pages
-    menuPage.classList.add = "hide";
-    contactPage.classList.add = "hide";
-    // Show the home page
-    homePage.classList.remove = "hide";
+    // remove the "hide" class from the home page element
+    homePage.classList.remove("hide");
   }
 });
 
 menuBTN.addEventListener("click", () => {
-  // If the menu button is not disabled and the current page is not menu
   if (!menuBTN.disabled && displayed !== "menu") {
-    // Show the menu content
+    // hide the currently displayed content
+    document.querySelector("." + displayed).classList.add("hide");
+
+    // show the menu content
     menuContent();
-    // Set the displayed variable to menu
     displayed = "menu";
-    // Disable the menu button
     menuBTN.disabled = true;
-    // Enable the home and contact buttons
     homeBTN.disabled = false;
     contactBTN.disabled = false;
-    // Hide the home and contact pages
-    homePage.classList.add = "hide";
-    contactPage.classList.add = "hide";
-    // Show the menu page
-    menuPage.classList.remove = "hide";
+    // remove the "hide" class from the menu page element
+    menuPage.classList.remove("hide");
   }
 });
 
 contactBTN.addEventListener("click", () => {
-  // If the contact button is not disabled and the current page is not contact
   if (!contactBTN.disabled && displayed !== "contact") {
-    // Show the contact content
+    // hide the currently displayed content
+    document.querySelector("." + displayed).classList.add("hide");
+
+    // show the contact content
     contactContent();
-    // Set the displayed variable to contact
     displayed = "contact";
-    // Disable the contact button
     contactBTN.disabled = true;
-    // Enable the home and menu buttons
     homeBTN.disabled = false;
     menuBTN.disabled = false;
-    // Hide the home and menu pages
-    homePage.classList.add = "hide";
-    menuPage.classList.add = "hide";
-    // Show the contact page
-    contactPage.classList.remove = "hide";
+    // remove the "hide" class from the contact page element
+    contactPage.classList.remove("hide");
   }
 });
+
+
+
+
+
+
+
