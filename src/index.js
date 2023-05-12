@@ -42,9 +42,10 @@ homeBTN.addEventListener("click", () => {
     homeBTN.disabled = true;
     menuBTN.disabled = false;
     contactBTN.disabled = false;
-    // toggle the "hide" class on the home page element
-    homePage.classList.toggle("hide");
+    // remove the "hide" class from the home page element
+    homePage.classList.remove("hide");
     console.log(displayed);
+    window.location.reload();
   }
 });
 
@@ -59,8 +60,8 @@ menuBTN.addEventListener("click", () => {
     menuBTN.disabled = true;
     homeBTN.disabled = false;
     contactBTN.disabled = false;
-    // toggle the "hide" class on the menu page element
-    menuPage.classList.toggle("hide");
+    // remove the "hide" class from the menu page element
+    menuPage.classList.remove("hide");
     console.log(displayed);
   }
 });
@@ -76,8 +77,8 @@ contactBTN.addEventListener("click", () => {
     contactBTN.disabled = true;
     homeBTN.disabled = false;
     menuBTN.disabled = false;
-    // toggle the "hide" class on the contact page element
-    contactPage.classList.toggle("hide");
+    // remove the "hide" class from the contact page element
+    contactPage.classList.remove("hide");
     console.log(displayed);
   }
 });
