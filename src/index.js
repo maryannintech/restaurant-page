@@ -19,8 +19,6 @@ const contactPage = document.querySelector(".contact");
 
 const homeBtn = document.querySelector(".homeBtn");
 homeBtn.addEventListener("click", () => {
-  contentDIV.removeChild(menuPage);
-  contentDIV.removeChild(contactBtn);
   if (homeClicked === false) {
     homeContent();
     homeClicked = false;
@@ -32,7 +30,6 @@ homeBtn.addEventListener("click", () => {
 
 const menuBtn = document.querySelector(".menuBtn");
 menuBtn.addEventListener("click", () => {
-  contentDIV.removeChild(homePage);
   if (menuClicked === false) {
     menuContent();
     menuClicked = true;
@@ -44,7 +41,6 @@ menuBtn.addEventListener("click", () => {
 
 const contactBtn = document.querySelector(".contactBtn");
 contactBtn.addEventListener("click", () => {
-  contentDIV.removeChild(homePage);
   if (contactClicked === false) {
     contactContent();
     contactClicked = true;
