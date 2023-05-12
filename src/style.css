@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-.hide {
-  display: none;
-}
-
 :root {
   --bg-color: #87986a;
   --pink-color: #d9ae94;
@@ -262,4 +258,8 @@ footer p {
   text-decoration: underline;
   text-decoration-color: var(--yellow-color);
   text-decoration-thickness: 3px;
+}
+
+.hide {
+  display: none;
 }

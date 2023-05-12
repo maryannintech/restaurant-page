@@ -15,13 +15,20 @@ const menuBTN = document.querySelector(".menuBtn");
 const contactBTN = document.querySelector(".contactBtn");
 
 const homePage = document.createElement("div");
+homePage.className = "homeLoad";
 homePage.classList.add("home");
 
 const menuPage = document.createElement("div");
+menuPage.className = "menuLoad";
 menuPage.classList.add("menu");
 
 const contactPage = document.createElement("div");
+contactPage.className = "contactLoad";
 contactPage.classList.add("contact");
+
+console.log(homePage);
+console.log(menuPage);
+console.log(contactPage);
 
 // Add event listeners to the home, menu, and contact buttons
 homeBTN.addEventListener("click", () => {
@@ -37,10 +44,10 @@ homeBTN.addEventListener("click", () => {
     menuBTN.disabled = false;
     contactBTN.disabled = false;
     // Hide the menu and contact pages
-    menuPage.classList.add("hide");
-    contactPage.classList.add("hide");
+    menuPage.classList.add = "hide";
+    contactPage.classList.add = "hide";
     // Show the home page
-    homePage.classList.remove("hide");
+    homePage.classList.remove = "hide";
   }
 });
 
@@ -57,10 +64,10 @@ menuBTN.addEventListener("click", () => {
     homeBTN.disabled = false;
     contactBTN.disabled = false;
     // Hide the home and contact pages
-    homePage.classList.add("hide");
-    contactPage.classList.add("hide");
+    homePage.classList.add = "hide";
+    contactPage.classList.add = "hide";
     // Show the menu page
-    menuPage.classList.remove("hide");
+    menuPage.classList.remove = "hide";
   }
 });
 
@@ -77,9 +84,9 @@ contactBTN.addEventListener("click", () => {
     homeBTN.disabled = false;
     menuBTN.disabled = false;
     // Hide the home and menu pages
-    homePage.classList.add("hide");
-    menuPage.classList.add("hide");
+    homePage.classList.add = "hide";
+    menuPage.classList.add = "hide";
     // Show the contact page
-    contactPage.classList.remove("hide");
+    contactPage.classList.remove = "hide";
   }
 });
