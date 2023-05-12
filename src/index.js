@@ -1,7 +1,7 @@
 import "./style.css";
-import { homeContent } from "./modules/home";
-import { menuContent } from "./modules/menu";
-import { contactContent } from "./modules/contact";
+import homeContent from "./modules/home";
+import menuContent from "./modules/menu";
+import contactContent from "./modules/contact";
 import makeNav from "./modules/nav";
 
 makeNav();
@@ -28,7 +28,6 @@ contactPage.classList.add("contact");
 console.log(homePage);
 console.log(menuPage);
 console.log(contactPage);
-
 
 // Add event listeners to the home, menu, and contact buttons
 homeBTN.addEventListener("click", () => {

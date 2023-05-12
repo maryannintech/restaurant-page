@@ -42,6 +42,6 @@ function contactContent() {
   contentDIV.appendChild(contactSection);
 }
 
-export { contactContent }
+export default contactContent;
 
 

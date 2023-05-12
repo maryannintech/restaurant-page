@@ -107,4 +107,4 @@ function menuContent() {
   contentDIV.appendChild(menuSection);
 }
 
-export { menuContent }
+export default menuContent;

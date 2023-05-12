@@ -117,4 +117,4 @@ function homeContent() {
   contentDIV.appendChild(homeSection);
 }
 
-export { homeContent }
+export default homeContent;
