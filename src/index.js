@@ -14,8 +14,6 @@ makeNav();
 homeContent();
 
 const homePage = document.querySelector(".home");
-const menuPage = document.querySelector(".menu");
-const contactPage = document.querySelector(".contact");
 
 function init() {
   const homeBtn = document.querySelector(".homeBtn");
@@ -31,6 +29,7 @@ function init() {
   });
 
   const menuBtn = document.querySelector(".menuBtn");
+  const menuPage = document.querySelector(".menu");
   menuBtn.addEventListener("click", () => {
     if (menuClicked === false) {
       menuContent();
@@ -43,13 +42,13 @@ function init() {
   });
 
   const contactBtn = document.querySelector(".contactBtn");
+  const contactPage = document.querySelector(".contact");
   contactBtn.addEventListener("click", () => {
     if (contactClicked === false) {
       contactContent();
       contactClicked = true;
       homePage.style.display = "none";
       menuPage.style.display = "none";
-    } else {
     }
     homeClicked = false;
     menuClicked = false;
