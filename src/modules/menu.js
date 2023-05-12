@@ -1,4 +1,4 @@
-function menuContent() {
+export default function menuContent() {
   // menu
   const menuBG = document.createElement("div");
   menuBG.className = "menu-page";
@@ -102,9 +102,7 @@ function menuContent() {
   const menuSection = document.createElement("section");
   menuSection.className = "menu";
   menuSection.appendChild(menuBG);
-  
+
   const contentDIV = document.querySelector("#content");
   contentDIV.appendChild(menuSection);
 }
-
-export default menuContent;

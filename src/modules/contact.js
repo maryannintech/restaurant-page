@@ -1,4 +1,4 @@
-function contactContent() {
+export default function contactContent() {
   // contact
   const contactBG = document.createElement("div");
   contactBG.className = "contact-page";
@@ -42,4 +42,4 @@ function contactContent() {
   contentDIV.appendChild(contactSection);
 }
 
-export default contactContent;
+
