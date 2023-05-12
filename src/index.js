@@ -25,9 +25,11 @@ const contactPage = document.createElement("div");
 contactPage.className = "contactLoad";
 contactPage.classList.add("contact");
 
+// for debugging
 console.log(homePage);
 console.log(menuPage);
 console.log(contactPage);
+console.log(displayed)
 
 homeBTN.addEventListener("click", () => {
   if (!homeBTN.disabled && displayed !== "home") {
@@ -40,8 +42,9 @@ homeBTN.addEventListener("click", () => {
     homeBTN.disabled = true;
     menuBTN.disabled = false;
     contactBTN.disabled = false;
-    // remove the "hide" class from the home page element
-    homePage.classList.remove("hide");
+    // toggle the "hide" class on the home page element
+    homePage.classList.toggle("hide");
+    console.log(displayed);
   }
 });
 
@@ -56,8 +59,9 @@ menuBTN.addEventListener("click", () => {
     menuBTN.disabled = true;
     homeBTN.disabled = false;
     contactBTN.disabled = false;
-    // remove the "hide" class from the menu page element
-    menuPage.classList.remove("hide");
+    // toggle the "hide" class on the menu page element
+    menuPage.classList.toggle("hide");
+    console.log(displayed);
   }
 });
 
@@ -72,10 +76,13 @@ contactBTN.addEventListener("click", () => {
     contactBTN.disabled = true;
     homeBTN.disabled = false;
     menuBTN.disabled = false;
-    // remove the "hide" class from the contact page element
-    contactPage.classList.remove("hide");
+    // toggle the "hide" class on the contact page element
+    contactPage.classList.toggle("hide");
+    console.log(displayed);
   }
 });
+
+
 
 
 
